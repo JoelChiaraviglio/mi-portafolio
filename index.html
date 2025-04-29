@@ -42,6 +42,7 @@
             <div class="redes">
                 <a href="https://www.linkedin.com/in/brianjoelchiaraviglio/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="mailto:chiaravigliobrianjoel@gmail.com"  target="_blank"><i class="fa fa-envelope"></i></a>
+                <a href="https://wa.me/5493576461130?text=Hola Joel,%20te contacto desde ....%20Mi nombre es ..." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
     </section>
@@ -145,7 +146,7 @@
                     <h3>Experiencia de trabajo</h3>
                     <div class="item der">
                         <h4>Desarrollador Full Stack</h4>
-                        <span class="casa">CABL & ASOCIADOS S.R.L / CUBITS S.R.L</span>
+                        <span class="casa">CABL [&] ASOCIADOS S.R.L / CUBITS S.R.L</span>
                         <span class="fecha">2021 - 2025</span>
                         <p>
                             <ul>
@@ -235,16 +236,18 @@
             <h2>CONTACTO</h2>
             <div class="fila">
                 <div class="col">
-                    <form action="enviar_correo.php" method="post">
-                        <input type="text" placeholder="Nombre" name="nombre">
-                        <input type="tel" placeholder="Número telefónico" name="telefono">
-                        <input type="email" placeholder="Dirección de correo" name="email">
-                        <input type="text" placeholder="Tema" name="tema">
-                        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <form id="miFormulario" action="https://formsubmit.co/chiaravigliobrianjoel@gmail.com" method="POST">
+                        <input type="text" placeholder="Nombre" name="nombre" required>
+                        <input type="tel" placeholder="Número telefónico" name="telefono" required>
+                        <input type="email" placeholder="Dirección de correo" name="email" required>
+                        <input type="text" placeholder="Tema" name="tema" required>
+                        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
                         <button type="submit"> Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                             <span class="overlay"></span>
                         </button>
                     </form>
+                    <div id="mensaje-enviado" style="display:none; color: green; "><strong>¡Mensaje enviado correctamente!</strong></div>
+                    <div id="mensaje-error" style="display:none; color: red;">Hubo un error al enviar el mensaje.</div>
                 </div>
             </div>
         </div>
@@ -258,9 +261,13 @@
         <div class="redes">
             <a href="https://www.linkedin.com/in/brianjoelchiaraviglio/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="mailto:chiaravigliobrianjoel@gmail.com"  target="_blank"><i class="fa fa-envelope"></i></a>
+            <a href="https://wa.me/5493576461130?text=Hola Joel,%20te contacto desde ....%20Mi nombre es ..." target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
 </body>
 </html>
