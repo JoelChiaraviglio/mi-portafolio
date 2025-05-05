@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Joel Chiaraviglio</title>
     <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+          emailjs.init("m7HNv6LcFGzEYuSi-"); // Reemplaza con tu Public Key (User ID) de EmailJS
+        })();
+      </script>
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
@@ -246,7 +252,7 @@
             <h2>CONTACTO</h2>
             <div class="fila">
                 <div class="col">
-                    <form id="miFormulario" action="https://formsubmit.co/chiaravigliobrianjoel@gmail.com" method="POST">
+                    <form id="miFormulario" method="POST">
                         <input type="text" placeholder="Nombre" name="nombre" required>
                         <input type="tel" placeholder="Número telefónico" name="telefono" required>
                         <input type="email" placeholder="Dirección de correo" name="email" required>
